@@ -53,7 +53,7 @@ header {
   display: none;
 }
 .modal-input {
-  min-width: 150px;
+  width: 300px;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -79,24 +79,26 @@ header {
   font-size: 15px;
 }
 .message-regiter {
-  margin-left: 150px;
+  margin-left: 35px;
 }
 .model-textarea {
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 18px;
+  border: 1px solid #ccc;
 }
 .btn-send {
   border: none;
   background-color: #277cfb;
   color: #fff;
-  padding: 22px 80px;
+  padding: 14px 150px;
   border-radius: 5px;
+  font-size: 20px;
 }
 .button-send {
-  margin: 30px 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 .video-youtube {
   margin: 110px 0;
@@ -118,15 +120,16 @@ header {
 }
 .text-mobile-app {
   width: 400px;
+  font-size:18px;
+  color: #666666;
 }
 .cross {
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   margin-top: 30px;
   cursor: pointer;
   color: #277cfb;
-  font-size: 14px;
 }
 .checkbox-add:checked .mobile-app-customer-hidden {
   display: block;
@@ -138,6 +141,7 @@ header {
 }
 .mobile-app-customer-hidden-item {
   display: flex;
+  margin-top: 40px;
 }
 .feature {
   margin-left: 80px;
@@ -149,6 +153,7 @@ header {
   font-size: 15px;
 }
 .feature-description {
+  color: #666666;
 }
 .top-sz {
   margin-top: 100px;
@@ -160,12 +165,15 @@ header {
   margin: 0 10px;
 }
 .service-item {
-  border: 1px solid #ccc;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
-  height: 200px;
+  height: 280px;
   margin-left: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  .service-item-description{
+    width:180px;
+  }
 }
 .service-list,
 .company,
@@ -242,7 +250,7 @@ footer {
 .text-slider {
   position: absolute;
   bottom: 47px;
-  left: 100px;
+  left: 200px;
   top: 200px;
 }
 .text-heading {
@@ -253,7 +261,20 @@ footer {
   width: 400px;
   font-size: 18px;
   margin-top: 20px;
+  color: #666666;
 }
-.button-fix {
-  margin-left: 100px;
+.button-reseach {
+  border: 1px solid #277cfb;
+  background-color: #277cfb;
+  padding: 5px 15px;
+  border-radius: 35px;
+  color: #fff;
+  font-size:15px;
+}
+.mobile-app-tittle {
+  font-weight: 400;
+}
+.modal-text {
+  font-weight: 400;
+  margin-left: 243px;
 }
