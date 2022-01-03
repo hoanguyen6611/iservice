@@ -19,21 +19,21 @@
 
 <body>
     <div class="app">
-        <header>
+        <header id="home">
             <div class="navbar navbar-expand-lg mr-5">
                 <a class="navbar-logo" href="#">Iservice</a>
             </div>
             <ul>
                 <li><a href="">Trang chủ</a></li>
-                <li><a href="">Ứng dụng</a></li>
-                <li><a href="">Dịch vụ</a></li>
-                <li><a href="">Khách hàng</a></li>
-                <li><a href="">Đánh giá</a></li>
-                <li><a href="">Liên hệ</a></li>
+                <li><a href="#mobileapp">Ứng dụng</a></li>
+                <li><a href="#service">Dịch vụ</a></li>
+                <li><a href="#company">Khách hàng</a></li>
+                <li><a href="#feedback">Đánh giá</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
             </ul>
         </header>
         <div class="content">
-            <div class="slider-show">
+            <div id="slider" class="slider-show">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -85,7 +85,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="mobile-app">
+            <div id="mobileapp" class="mobile-app">
                 <div class="container mobile-app-customer">
                     <img class="img-iphone"
                         src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_lez2kd7Luv."
@@ -246,7 +246,7 @@
                     </div>
                 </div>
             </div>
-            <div class="service-list">
+            <div id="service" class="service-list">
                 <div class="container">
                     <div class="d-flex justify-content-between">
                         <h3>Tìm hiểu thêm về dịch vụ</h3>
@@ -287,7 +287,7 @@
                     </div>
                 </div>
             </div>
-            <div class="company">
+            <div id="company" class="company">
                 <h3 class="text-center mobile-app-tittle">Top doanh nghiệp</h3>
                 <div class="d-flex justify-content-center mt-4">
                     <p class="top-company">
@@ -359,7 +359,7 @@
                     </div>
                 </div>
             </div>
-            <div class="feed-back">
+            <div id="feedback" class="feed-back">
                 <div class="container">
                     <h3 class="text-center mobile-app-tittle">Phản hồi doanh nghiệp</h3>
                     <p class="text-center mt-4" style="font-size:18px">Hãy xem khách hàng nói gì về Iservice...</p>
@@ -643,7 +643,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact">
+            <div id="contact" class="contact">
                 <div class="container contact-mt">
                     <div class="contact-box row">
                         <div class="col-sm-5">
