@@ -20,10 +20,35 @@
 <body>
     <div class="app">
         <header id="home">
-            <div class="navbar navbar-expand-lg mr-5">
+            <!-- Mobile -->
+            <label for="nav-mobile-input" class="nav-btn-mobile">
+                <i class="fas fa-bars nav-bars sz-btn"></i>
+            </label>
+            <div class="logo-mobile-app">
+                <img class="pxd" src="https://iservice.devti.xyz/static/media/logosvg.85ec2a9e.svg" alt="">
+            </div>
+            <!-- <label for="nav-mobile-input" style="color: #ffff;">Check</label> -->
+            <input type="checkbox" name="" id="nav-mobile-input" class="input-model" hidden>
+            <label for="nav-mobile-input" class="over-lay"></label>
+            <ul class="nav-mobile-link">
+                <div class="menu-nav">
+                    <li><a href=""><b>Menu</b></a></li>
+                    <label for="nav-mobile-input" class="btn-close">
+                        <i class="fas fa-times sz-btn"></i>
+                    </label>
+                </div>
+                <li class="nav-mobile-item"><a href="">Trang chủ</a></li>
+                <li class="nav-mobile-item"><a href="#mobileapp">Ứng dụng</a></li>
+                <li class="nav-mobile-item"><a href="#service">Dịch vụ</a></li>
+                <li class="nav-mobile-item"><a href="#company">Khách hàng</a></li>
+                <li class="nav-mobile-item"><a href="#feedback">Đánh giá</a></li>
+                <li class="nav-mobile-item"><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <!-- PC -->
+            <div class="nav-pc-logo navbar navbar-expand-lg mr-5">
                 <a class="navbar-logo" href="#">Iservice</a>
             </div>
-            <ul>
+            <ul class="nav-pc-link">
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="#mobileapp">Ứng dụng</a></li>
                 <li><a href="#service">Dịch vụ</a></li>
@@ -31,6 +56,7 @@
                 <li><a href="#feedback">Đánh giá</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
             </ul>
+            <!-- Tablet -->
         </header>
         <div class="content">
             <div id="slider" class="slider-show">
@@ -79,13 +105,14 @@
                     </a>
                 </div>
             </div>
-            <div class="video-youtube d-flex justify-content-center ">
-                <iframe width="1000" height="563" src="https://www.youtube.com/embed/UMT2H15tSI0"
+            <div class="video-youtube ">
+                <iframe class="video-youtube-link" src="https://www.youtube.com/embed/UMT2H15tSI0"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <div id="mobileapp" class="mobile-app">
+                <!-- PC -->
                 <div class="container mobile-app-customer">
                     <img class="img-iphone"
                         src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_lez2kd7Luv."
@@ -103,6 +130,33 @@
                             <a onclick="myFunction()" class="cross"><u>Xem thêm</u><i
                                     class="fas fa-chevron-down ml-2"></i></a>
                         </div>
+                    </div>
+                </div>
+                <!-- Mobile -->
+                <div class="container mobile-content">
+                    <h3 class="text-center mb-sz">Ứng dụng dành cho Khách hàng</h3>
+                    <div class="d-flex justify-content-center">
+                        <img class="img-iphone-mb"
+                            src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_lez2kd7Luv."
+                            alt="">
+                    </div>
+                    <div class="mobile-app-des-right-mb">
+                        <div class="d-flex justify-content-center">
+                            <p class="text-mobile-app mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit
+                                nulla
+                                enim magna eget scelerisque arcu, a, lacinia blandit. Auctor eu fermentum.</p>
+                        </div>
+                        <div class="setting-mb mt-4 d-flex justify-content-around">
+                            <img width="40%"
+                                src="https://res.cloudinary.com/dxd5emviu/image/upload/v1640944102/t%E1%BA%A3i_xu%E1%BB%91ng_heoaat.png"
+                                alt="">
+                            <img width="40%"
+                                src="https://res.cloudinary.com/dxd5emviu/image/upload/v1640944102/t%E1%BA%A3i_xu%E1%BB%91ng_1_rzkoec.png"
+                                alt="">
+                        </div>
+                        <a onclick="myFunctionmb()" class="cross"><u>Xem thêm</u><i
+                                class="fas fa-chevron-down ml-2"></i></a>
                     </div>
                 </div>
                 <div id="myDIV" class="container mobile-app-customer-hidden ">
@@ -139,6 +193,31 @@
                         </div>
                     </div>
                 </div>
+                <div id="myDIVmb" class="container mobile-app-customer-hidden-mb ">
+                    <h2 class="text-center mb-sz-1">Những tính năng chính</h2>
+                    <div class="d-flex justify-content-around">
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/1-circle-c--v1.png" />
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/2-circle-c--v1.png" />
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/3-circle-c--v1.png" />
+                    </div>
+                    <div class="feature-item d-flex">
+                        <div class="mb-sz-2">
+                            <h5 class="feature-text-mb">Đặt xe chỉ với 2 thao tác đơn giản</h5>
+                            <p style="color: #666666;" class="feature-description-mb">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                                elit.Sit nulla enim magna eget.</p>
+                        </div>
+                    </div>
+                    <div class="mobile-app-customer-hidden-item d-flex justify-content-center">
+                        <img style="width: 150px; height:300px"
+                            src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_cTIiuSNOyg."
+                            alt="">
+                    </div>
+                </div>
+                <!-- PC -->
                 <div class="container mobile-app-customer mt-4x">
                     <div class="mobile-app-des-left">
                         <h2 class="mobile-app-tittle">Ứng dụng dành cho doanh nghiệp</h2>
@@ -157,6 +236,33 @@
                     <img class="img-iphone"
                         src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_lez2kd7Luv."
                         alt="">
+                </div>
+                <!-- Mobile -->
+                <div class="container mobile-content">
+                    <h3 class="text-center mb-sz">Ứng dụng dành cho Doanh nghiệp</h3>
+                    <div class="d-flex justify-content-center">
+                        <img class="img-iphone-mb"
+                            src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_lez2kd7Luv."
+                            alt="">
+                    </div>
+                    <div class="mobile-app-des-right-mb">
+                        <div class="d-flex justify-content-center">
+                            <p class="text-mobile-app mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit
+                                nulla
+                                enim magna eget scelerisque arcu, a, lacinia blandit. Auctor eu fermentum.</p>
+                        </div>
+                        <div class="setting-mb mt-4 d-flex justify-content-around">
+                            <img width="40%"
+                                src="https://res.cloudinary.com/dxd5emviu/image/upload/v1640944102/t%E1%BA%A3i_xu%E1%BB%91ng_heoaat.png"
+                                alt="">
+                            <img width="40%"
+                                src="https://res.cloudinary.com/dxd5emviu/image/upload/v1640944102/t%E1%BA%A3i_xu%E1%BB%91ng_1_rzkoec.png"
+                                alt="">
+                        </div>
+                        <a onclick="myFunction1mb()" class="cross"><u>Xem thêm</u><i
+                                class="fas fa-chevron-down ml-2"></i></a>
+                    </div>
                 </div>
                 <div id="myDIV1" class="container mobile-app-customer-hidden ">
                     <h2 class="text-center">Những tính năng chính</h2>
@@ -192,6 +298,30 @@
                         </div>
                     </div>
                 </div>
+                <div id="myDIV1mb" class="container mobile-app-customer-hidden-mb ">
+                    <h2 class="text-center mb-sz-1">Những tính năng chính</h2>
+                    <div class="d-flex justify-content-around">
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/1-circle-c--v1.png" />
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/2-circle-c--v1.png" />
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/3-circle-c--v1.png" />
+                    </div>
+                    <div class="feature-item d-flex">
+                        <div class="mb-sz-2">
+                            <h5 class="feature-text-mb">Đặt xe chỉ với 2 thao tác đơn giản</h5>
+                            <p style="color: #666666;" class="feature-description-mb">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                                elit.Sit nulla enim magna eget.</p>
+                        </div>
+                    </div>
+                    <div class="mobile-app-customer-hidden-item d-flex justify-content-center">
+                        <img style="width: 150px; height:300px"
+                            src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_cTIiuSNOyg."
+                            alt="">
+                    </div>
+                </div>
                 <div class="container mobile-app-customer mt-4x">
                     <img class="img-iphone"
                         src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_lez2kd7Luv."
@@ -209,6 +339,33 @@
                             <a onclick="myFunction2()" class="cross"><u>Xem thêm</u><i
                                     class="fas fa-chevron-down ml-2"></i></a>
                         </div>
+                    </div>
+                </div>
+                <!-- Mobile -->
+                <div class="container mobile-content">
+                    <h3 class="text-center mb-sz">Ứng dụng dành cho quản lý</h3>
+                    <div class="d-flex justify-content-center">
+                        <img class="img-iphone-mb"
+                            src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_lez2kd7Luv."
+                            alt="">
+                    </div>
+                    <div class="mobile-app-des-right-mb">
+                        <div class="d-flex justify-content-center">
+                            <p class="text-mobile-app mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit
+                                nulla
+                                enim magna eget scelerisque arcu, a, lacinia blandit. Auctor eu fermentum.</p>
+                        </div>
+                        <div class="setting-mb mt-4 d-flex justify-content-around">
+                            <img width="40%"
+                                src="https://res.cloudinary.com/dxd5emviu/image/upload/v1640944102/t%E1%BA%A3i_xu%E1%BB%91ng_heoaat.png"
+                                alt="">
+                            <img width="40%"
+                                src="https://res.cloudinary.com/dxd5emviu/image/upload/v1640944102/t%E1%BA%A3i_xu%E1%BB%91ng_1_rzkoec.png"
+                                alt="">
+                        </div>
+                        <a onclick="myFunction2mb()" class="cross"><u>Xem thêm</u><i
+                                class="fas fa-chevron-down ml-2"></i></a>
                     </div>
                 </div>
                 <div id="myDIV2" class="container mobile-app-customer-hidden ">
@@ -245,12 +402,36 @@
                         </div>
                     </div>
                 </div>
+                <div id="myDIV2mb" class="container mobile-app-customer-hidden-mb ">
+                    <h2 class="text-center mb-sz-1">Những tính năng chính</h2>
+                    <div class="d-flex justify-content-around">
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/1-circle-c--v1.png" />
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/2-circle-c--v1.png" />
+                        <img width="56px" height="56px"
+                            src="https://img.icons8.com/color/96/000000/3-circle-c--v1.png" />
+                    </div>
+                    <div class="feature-item d-flex">
+                        <div class="mb-sz-2">
+                            <h5 class="feature-text-mb">Đặt xe chỉ với 2 thao tác đơn giản</h5>
+                            <p style="color: #666666;" class="feature-description-mb">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                                elit.Sit nulla enim magna eget.</p>
+                        </div>
+                    </div>
+                    <div class="mobile-app-customer-hidden-item d-flex justify-content-center">
+                        <img style="width: 150px; height:300px"
+                            src="https://iservice.api.landingpage.devti.xyz/v1/file/download/AVATAR/AVATAR_cTIiuSNOyg."
+                            alt="">
+                    </div>
+                </div>
             </div>
             <div id="service" class="service-list">
                 <div class="container">
-                    <div class="d-flex justify-content-between">
-                        <h3>Tìm hiểu thêm về dịch vụ</h3>
-                        <div>
+                    <div class="abs-65">
+                        <h3 class="h3-v112">Tìm hiểu thêm về dịch vụ</h3>
+                        <div class="ptxm">
                             <img src="https://img.icons8.com/ios/50/000000/previous.png" />
                             <img src="https://img.icons8.com/ios/50/000000/next.png" />
                         </div>
@@ -263,8 +444,9 @@
                                     alt="">
                             </div>
                             <div class="service-item-description">
-                                <h5 class="text-center">Dịch vụ giúp việc tại nhà</h5>
-                                <p class="text-center">Chuyên cung ứng giúp việc nhà, giữ trẻ, nuôi bệnh, nuôi...</p>
+                                <h5 class="text-center service-item-text-1">Dịch vụ giúp việc tại nhà</h5>
+                                <p class="text-center service-item-text-2">Chuyên cung ứng giúp việc nhà, giữ trẻ, nuôi
+                                    bệnh, nuôi...</p>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button class="button-reseach opan" disabled>Tìm hiểu thêm</button>
@@ -277,8 +459,9 @@
                                     alt="">
                             </div>
                             <div class="service-item-description">
-                                <h5 class="text-center">Dịch vụ sửa chữa điện lạnh</h5>
-                                <p class="text-center">Lắp đặt, sửa chữa, bảo trì máy lạnh, tủ lạnh, máy giặt...</p>
+                                <h5 class="text-center service-item-text-1">Dịch vụ sửa chữa điện lạnh</h5>
+                                <p class="text-center service-item-text-2">Lắp đặt, sửa chữa, bảo trì máy lạnh, tủ lạnh,
+                                    máy giặt...</p>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button class="button-reseach">Tìm hiểu thêm</button>
@@ -643,6 +826,18 @@
                     </div>
                 </div>
             </div>
+            <div class="b526 container d-flex justify-content-center">
+                <div class="mb-0705">
+                    <h3>Liên lạc</h3>
+                    <p class="contact-description">Nemo enim ipsam boluptatem quia voluptas sit aspernatur
+                        aut
+                        aut fugit, sed quia consequuntur magni dolires eos qui ratione.</p>
+                    <div class="card-contact">
+                        <input class="input-contact" type="text" placeholder="Nhập email của bạn">
+                        <button class="button-contact">Liên hệ</button>
+                    </div>
+                </div>
+            </div>
             <div id="contact" class="contact">
                 <div class="container contact-mt">
                     <div class="contact-box row">
@@ -681,6 +876,9 @@
                 <p class="text-center">@ 2021 - Iservice, All rights reserved.</p>
             </footer>
         </div>
+    </div>
+    <div class="mobile-hidden">
+        Tải ứng dụng Iservice để trải nghiệm tốt hơn
     </div>
     <!-- Modal -->
     <div class="modal fade size-modal" id="formregiter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -740,8 +938,24 @@
                 x.style.display = 'none';
             }
         }
+        function myFunctionmb() {
+            var x = document.getElementById('myDIVmb');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
         function myFunction1() {
             var x = document.getElementById('myDIV1');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+        function myFunction1mb() {
+            var x = document.getElementById('myDIV1mb');
             if (x.style.display === 'none') {
                 x.style.display = 'block';
             } else {
@@ -756,18 +970,26 @@
                 x.style.display = 'none';
             }
         }
+        function myFunction2mb() {
+            var x = document.getElementById('myDIV2mb');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
                 responsive: {
                     0: {
-                        items: 1
+                        items: 2
                     },
                     600: {
-                        items: 3
+                        items: 2
                     },
-                    1000: {
+                    1025: {
                         items: 4
                     }
                 }

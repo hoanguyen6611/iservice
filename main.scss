@@ -102,6 +102,12 @@ header {
 }
 .video-youtube {
   margin: 110px 0;
+  display: flex;
+  justify-content: center;
+}
+.video-youtube-link {
+  width: 1000px;
+  height: 563px;
 }
 .mobile-app-customer {
   display: flex;
@@ -145,8 +151,6 @@ header {
 }
 .feature {
   margin-left: 80px;
-}
-.feature-item {
 }
 .feature-text {
   color: #1890ff;
@@ -291,6 +295,10 @@ footer {
 .contact-mt {
   position: relative;
   margin-top: -50px;
+  display: block;
+}
+.contact-mt-mb {
+  display: none;
 }
 .card-contact {
   margin-top: 30px;
@@ -312,4 +320,287 @@ footer {
 }
 .opan {
   opacity: 0.6;
+}
+// Mobile - Other
+.nav-btn-mobile {
+  line-height: 70px;
+  margin-left: 20px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 25px;
+}
+.pxd {
+  display: none;
+}
+.nav-bars {
+  color: #fff;
+}
+.over-lay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
+.nav-mobile-link {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  max-width: 100%;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: transform linear 0.2s;
+}
+.nav-mobile-item {
+  display: block;
+  a {
+    color: #000;
+  }
+}
+.menu-nav {
+  background-color: blue;
+  padding: 5px;
+  position: relative;
+  a {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+.btn-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.sz-btn {
+  font-size: 25px;
+}
+.input-model:checked ~ .over-lay {
+  display: block;
+}
+.input-model:checked ~ .nav-mobile-link {
+  transform: translateX(0);
+}
+.mobile-hidden {
+  display: none;
+}
+.mobile-content {
+  display: none;
+}
+.mobile-app-customer-hidden-mb {
+  display: none;
+}
+// Mobile
+@media (max-width: 46.1875em) {
+  .nav-btn-mobile {
+    display: block;
+  }
+  .nav-pc-logo,
+  .nav-pc-link {
+    display: none;
+  }
+  header {
+    background-color: #fff;
+  }
+  .nav-bars {
+    color: #000;
+  }
+  .slider-show {
+    display: none;
+  }
+  .video-youtube-pc {
+    display: none;
+  }
+  .video-youtube-mobile {
+    display: block;
+  }
+  .video-youtube-link {
+    width: 460px;
+    height: 230px;
+  }
+  .video-youtube {
+    margin-bottom: 110px;
+  }
+  .pxd {
+    display: block;
+  }
+  .mobile-hidden {
+    display: block;
+    position: fixed;
+    background-color: blue;
+    color: #fff;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .mobile-app-customer {
+    display: none;
+  }
+  .mobile-content {
+    display: block;
+  }
+  .img-iphone-mb {
+    width: 238px;
+    height: 287px;
+  }
+  .feature-text-mb,
+  .feature-description-mb {
+    text-align: center;
+  }
+  .mobile-app-customer-hidden-mb {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .service-item-text-1 {
+    font-size: 12px;
+    width: 100px;
+  }
+  .service-item-text-2 {
+    font-size: 10px;
+    width: 100px;
+  }
+  .ptxm {
+    display: none;
+  }
+  .h3-v112 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .service-item {
+    height: 220px;
+    width: 140px !important;
+  }
+  .service-btt {
+    padding: 0 2px;
+  }
+  .h3-v112 {
+  }
+  .logo-mobile-app {
+    margin-top: 20px;
+    margin-left: -150px;
+  }
+  .video-youtube {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .mb-sz {
+    font-size: 20px;
+    font-weight: 500;
+    width: 70%;
+    margin-left: 50px;
+  }
+  .text-mobile-app {
+    width: 350px;
+    font-size: 15px;
+    color: #666666;
+  }
+  .mb-sz-1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .mb-sz-2 {
+    font-size: 15px;
+  }
+  .button-reseach {
+    font-size: 10px;
+  }
+  .text-mobile-app {
+    width: 300px;
+  }
+  .mobile-app-tittle {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .top-company {
+    width: 300px;
+    font-size: 15px;
+  }
+  .img-responsive {
+    border-radius: 20px;
+    width: 157px !important;
+    height: 168px;
+  }
+  .card-feedback {
+    width: 150px;
+  }
+  .contact-mt {
+    display: none;
+  }
+  .mb-0705 {
+    display: block;
+  }
+  .text-p {
+    display: none;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .nav-btn-mobile {
+    display: block;
+  }
+  .nav-pc-logo,
+  .nav-pc-link {
+    display: none;
+  }
+  header {
+    background-color: #fff;
+  }
+  .nav-bars {
+    color: #000;
+  }
+  .pxd {
+    display: block;
+  }
+  .logo-mobile-app {
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+  .slider-show {
+    display: none;
+  }
+  .video-youtube {
+    margin: 20px 0;
+  }
+  .video-youtube-link {
+    width: 60%;
+    height: 230px;
+    margin-left: 20px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.service-btt {
+  padding: 0 180px;
+}
+.abs-65 {
+  display: flex;
+  justify-content: space-between;
+}
+.service-btt {
+  display: flex;
+  justify-content: flex-start;
+}
+.mb-0705 {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+.contact-main-mb {
+  display: none;
 }
