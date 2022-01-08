@@ -516,6 +516,7 @@ footer p {
 @media (max-width: 46.1875em) {
   .nav-btn-mobile {
     display: block;
+    z-index: 9;
   }
   .nav-pc-logo,
   .nav-pc-link {

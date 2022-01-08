@@ -410,6 +410,7 @@ footer {
 @media (max-width: 46.1875em) {
   .nav-btn-mobile {
     display: block;
+    z-index: 9;
   }
   .nav-pc-logo,
   .nav-pc-link {
@@ -592,7 +593,7 @@ footer {
     margin-bottom: -20px;
   }
   .img-app {
-    width:40%;
+    width: 40%;
   }
 }
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
@@ -667,7 +668,7 @@ footer {
     margin-left: -150px;
   }
   .img-app {
-    width:30%;
+    width: 30%;
   }
   .mb-sz-1 {
     font-size: 20px;
