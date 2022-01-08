@@ -247,7 +247,6 @@ footer {
   background-color: #f5f5f9;
   padding: 0 200px;
   padding-top: 30px;
-  margin-top: -50px;
   height: 150px;
   align-items: center;
   p {
@@ -356,6 +355,7 @@ footer {
   background-color: #fff;
   transform: translateX(-100%);
   transition: transform linear 0.2s;
+  z-index: 10;
 }
 .nav-mobile-item {
   display: block;
@@ -393,6 +393,17 @@ footer {
   display: none;
 }
 .mobile-app-customer-hidden-mb {
+  display: none;
+}
+.mb-0705 {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+.contact-main-mb {
   display: none;
 }
 // Mobile
@@ -435,10 +446,11 @@ footer {
     background-color: blue;
     color: #fff;
     bottom: 10px;
-    left: 10px;
-    right: 10px;
+    left: 25px;
     text-align: center;
     border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
   }
   .mobile-app-customer {
     display: none;
@@ -501,6 +513,7 @@ footer {
     width: 350px;
     font-size: 15px;
     color: #666666;
+    width: 300px;
   }
   .mb-sz-1 {
     font-size: 20px;
@@ -511,9 +524,6 @@ footer {
   }
   .button-reseach {
     font-size: 10px;
-  }
-  .text-mobile-app {
-    width: 300px;
   }
   .mobile-app-tittle {
     font-size: 20px;
@@ -539,6 +549,46 @@ footer {
   }
   .text-p {
     display: none;
+  }
+  .input-contact,
+  .button-contact {
+    font-size: 12px;
+  }
+  .input-contact {
+    width: 70%;
+  }
+  .contact-description {
+    font-size: 15px;
+  }
+  .card-contact {
+    margin-left: 10px;
+  }
+  .contact-main-mb {
+    background-color: #383d40;
+  }
+  .button-contact-2 {
+    border: none;
+    color: #fff;
+  }
+  .address-contact {
+    text-align: center;
+  }
+  .phone-contact,
+  .email-contact {
+    font-size: 12px;
+    color: #929292;
+  }
+  .address-contact-mb {
+    color: #929292;
+    text-align: center;
+    font-size: 12px;
+  }
+  .contact-main {
+    display: none;
+  }
+  .contact-main-mb {
+    display: block;
+    margin-bottom: -20px;
   }
 }
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
@@ -573,6 +623,42 @@ footer {
     height: 230px;
     margin-left: 20px;
   }
+  .mobile-content {
+    display: block;
+  }
+  .mb-sz {
+    font-size: 20px;
+    font-weight: 500;
+    width: 70%;
+    margin-left: 50px;
+  }
+  .img-iphone-mb {
+    width: 238px;
+    height: 287px;
+  }
+  .text-mobile-app {
+    width: 350px;
+    font-size: 15px;
+    color: #666666;
+    width: 300px;
+  }
+  .mobile-app-customer {
+    display: none;
+  }
+  .contact-mt {
+    display: none;
+  }
+  .mb-0705 {
+    display: block;
+  }
+  .contact-main {
+    display: none;
+  }
+  .contact-main-mb {
+    display: block;
+    margin-bottom: -20px;
+    background-color: #383d40;
+  }
 }
 @keyframes fadeIn {
   from {
@@ -593,14 +679,10 @@ footer {
   display: flex;
   justify-content: flex-start;
 }
-.mb-0705 {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 500px;
-  padding: 10px;
+.button-contact-2-mb {
   text-align: center;
-  display: none;
+  color: #929292;
 }
-.contact-main-mb {
-  display: none;
+.address-contact {
+  text-align: center;
 }
