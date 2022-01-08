@@ -451,6 +451,7 @@ footer {
     border-radius: 10px;
     font-size: 14px;
     padding: 10px;
+    z-index: 5;
   }
   .mobile-app-customer {
     display: none;
@@ -590,6 +591,9 @@ footer {
     display: block;
     margin-bottom: -20px;
   }
+  .img-app {
+    width:40%;
+  }
 }
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
   .nav-btn-mobile {
@@ -621,7 +625,8 @@ footer {
   .video-youtube-link {
     width: 60%;
     height: 230px;
-    margin-left: 20px;
+    margin-left: -150px;
+    margin-right: 50px;
   }
   .mobile-content {
     display: block;
@@ -630,7 +635,6 @@ footer {
     font-size: 20px;
     font-weight: 500;
     width: 70%;
-    margin-left: 50px;
   }
   .img-iphone-mb {
     width: 238px;
@@ -658,6 +662,16 @@ footer {
     display: block;
     margin-bottom: -20px;
     background-color: #383d40;
+  }
+  .tv44 {
+    margin-left: -150px;
+  }
+  .img-app {
+    width:30%;
+  }
+  .mb-sz-1 {
+    font-size: 20px;
+    font-weight: 500;
   }
 }
 @keyframes fadeIn {
