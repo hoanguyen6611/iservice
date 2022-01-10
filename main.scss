@@ -8,15 +8,14 @@ html {
   font-family: sans-serif;
 }
 body {
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
 }
 
 header {
   height: 70px;
   background-color: #333;
   display: flex;
-  padding-left: 266px;
-  padding-right: 266px;
+  justify-content: center;
   a {
     color: #fff;
   }
