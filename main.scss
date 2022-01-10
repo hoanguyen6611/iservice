@@ -7,6 +7,9 @@
 html {
   font-family: sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 
 header {
   height: 70px;
@@ -499,7 +502,7 @@ footer {
   .logo-mobile-app {
     margin-top: 20px;
     margin-left: -150px;
-    position:fixed;
+    position: fixed;
     top: 0;
     z-index: 9;
   }
